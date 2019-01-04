@@ -44,13 +44,11 @@
 		));
 
 		if (isset($results)>0){
-
 			$row = $results[0];
 			$this->setIdusuario($row['idusuario']);
 			$this->setDeslogin($row['deslogin']);
 			$this->setDessenha($row['dessenha']);
 			$this->setDtcadastro($row['dtcadastro']);
-
 		}
 	}
  ?>
