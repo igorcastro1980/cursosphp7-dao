@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	class Sql extends PDO{
 
@@ -7,15 +7,15 @@
 		public function __construct(){
 
 			$this->conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root", "123456");
-		
+
 		}
 
 
 		private function setParams($statment, $parameters = array()){
 
 			foreach ($parameters as $key => $value) {
-				
-				$this->setParam($key, $value);
+
+				$this->setParam($statment, $key, $value);
 
 			}
 
@@ -48,7 +48,6 @@
 			return $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 		}
-
 	}
 
 
