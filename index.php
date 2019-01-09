@@ -19,4 +19,6 @@
 	$usuario = new Usuario();
 	$usuario->login("Joao","123654");
 
+	echo $usuario;
+
  ?>
